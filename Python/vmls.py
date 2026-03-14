@@ -60,7 +60,7 @@ def kmeans1(X, num_clusters, max_iters=100, tolerance=1e-4, random_seed=None):
                 np.amin(
                     [np.linalg.norm(X[i] - reps[j]) for j in range(num_clusters)]
                 ), 
-                [np.linalg.norm(X[i] - reps[j]) for j in range(n_clusters)].index(
+                [np.linalg.norm(X[i] - reps[j]) for j in range(num_clusters)].index(
                     np.amin([np.linalg.norm(X[i] - reps[j]) for j in range(num_clusters)])
                 )
             )
@@ -104,7 +104,7 @@ def kmeans2(X, num_clusters, max_iters=100, tolerance=1e-4, random_seed=None):
                 np.amin(
                     [np.linalg.norm(X[i] - reps[j]) for j in range(num_clusters)]
                 ), 
-                [np.linalg.norm(X[i] - reps[j]) for j in range(n_clusters)].index(
+                [np.linalg.norm(X[i] - reps[j]) for j in range(num_clusters)].index(
                     np.amin([np.linalg.norm(X[i] - reps[j]) for j in range(num_clusters)])
                 )
             )
